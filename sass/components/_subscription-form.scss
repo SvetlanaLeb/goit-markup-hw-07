@@ -1,7 +1,7 @@
 .subscription {
   position: relative;
   margin-top: 20px;
-  & input {
+  input {
     font-size: 16px;
     line-height: 1.25;
     align-items: center;
@@ -19,7 +19,7 @@
       color: transparent;
     }
   }
-  & label {
+  label {
     position: absolute;
     top: 15px;
     left: 16px;
@@ -29,7 +29,7 @@
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
   }
-  & button {
+  button {
     margin-left: 7px;
     padding: 10px 28px 10px 28px;
     width: 200px;
@@ -37,7 +37,7 @@
     align-items: center;
     justify-content: center;
   }
-  & span {
+  span {
     display: inline-block;
     width: 24px;
     height: 24px;

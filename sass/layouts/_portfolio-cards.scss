@@ -3,63 +3,58 @@
   flex-wrap: wrap;
   margin-top: calc(-1 * 30px);
   margin-left: calc(-1 * 30px);
+  li {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+    width: 370px;
+    background: $primary-white-color;
+    border: 1px solid #eeeeee;
+  }
 }
 
-.list li {
-  flex-basis: calc(100% / 3 - 30px);
-  margin-left: 30px;
-  margin-top: 30px;
-}
-.card-content {
-  padding: 20px 24px;
-}
-.list-title {
-  color: $title-text-color;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-}
-.list-text {
-  color: $primary-text-color;
-  line-height: 1.87;
-}
-.list li {
-  width: 370px;
-
-  background: $primary-white-color;
-  border: 1px solid #eeeeee;
-}
-a.list-link {
+.list-link {
   text-decoration: none;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.list-link:hover,
-.list-link:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.card-thumb {
-  position: relative;
-  overflow: hidden;
-}
-.overlay {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 63px 24px;
-  background: rgba(33, 150, 243, 0.9);
-  transform: translateY(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.overlay p {
-  font-size: 18px;
-  line-height: 1.55;
-  color: $primary-white-color;
-}
-.list-link:focus .overlay,
-.list-link:hover .overlay {
-  transform: translateY(0);
+  .card-content {
+    padding: 20px 24px;
+    .list-title {
+      color: $title-text-color;
+      font-size: 18px;
+      line-height: 2;
+      letter-spacing: 0.06em;
+    }
+    .list-text {
+      color: $primary-text-color;
+      line-height: 1.87;
+    }
+  }
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+    & .overlay {
+      transform: translateY(0);
+    }
+  }
+  .card-thumb {
+    position: relative;
+    overflow: hidden;
+  }
+  .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 63px 24px;
+    background: rgba(33, 150, 243, 0.9);
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    p {
+      font-size: 18px;
+      line-height: 1.55;
+      color: $primary-white-color;
+    }
+  }
 }

@@ -1,7 +1,7 @@
 .form {
   width: 528px;
   padding: 40px 39px 40px 41px;
-  & b {
+  b {
     margin-top: 0;
     font-weight: bold;
     font-size: 20px;
@@ -9,7 +9,7 @@
     text-align: center;
     color: $title-text-color;
   }
-  & .sending-button {
+  .sending-button {
     margin-top: 30px;
     text-align: center;
   }
@@ -25,7 +25,7 @@
   &.name {
     margin-top: 30px;
   }
-  & label {
+  label {
     position: absolute;
     top: -18px;
     left: 0;
@@ -34,7 +34,7 @@
     letter-spacing: 0.01em;
     color: $primary-text-color;
   }
-  & svg {
+  svg {
     position: absolute;
     top: 11px;
     left: 12px;
@@ -57,7 +57,6 @@
     outline-color: $accent-color;
     outline-width: 1px;
     border-radius: 4px;
-    & + svg,
     & + svg {
       fill: $accent-color;
     }
@@ -95,7 +94,7 @@
   margin-left: 8px;
   display: flex;
   align-items: center;
-  & input[type='checkbox'] {
+  input[type='checkbox'] {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -116,7 +115,7 @@
       border: 2px solid $accent-color;
     }
   }
-  & .agreement-icon {
+  .agreement-icon {
     display: inline-block;
     width: 16px;
     height: 15px;
@@ -129,7 +128,7 @@
       border: 2px solid $accent-color;
     }
   }
-  & a {
+  a {
     color: $accent-color;
     display: inline;
   }
